@@ -55,7 +55,7 @@ public class DownloadActivity extends Activity {
         // Look up the AdView as a resource and load a request.
         AdView adView = new AdView(this);
         adView.setAdSize(AdSize.SMART_BANNER);
-        adView.setAdUnitId("ca-app-pub-9891261141906247/5874151219");
+        adView.setAdUnitId("ca-app-pub-9891261141906247/3222872418");
         LinearLayout adContainer = (LinearLayout)this.findViewById(R.id.adsContainer);
 
         AdRequest adRequest = new AdRequest.Builder().build();
