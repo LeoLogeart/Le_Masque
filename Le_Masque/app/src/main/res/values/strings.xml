@@ -1,0 +1,9 @@
+<resources>
+    <string name="activity_name">Le masque et la plume</string>
+    <string name="app_name">Le masque et la plume</string>
+    <string name="desc">Image</string>
+    <string name="change">Changer l\'affichage</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+</resources>
+
