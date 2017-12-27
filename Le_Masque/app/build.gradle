@@ -6,7 +6,7 @@ android {
         applicationId "com.dl.cynh.lemasque"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 2
+        versionCode 3
         versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -14,6 +14,15 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "${appName}-${android.defaultConfig.versionName}.apk"
+                        outputFileName = new File(fileName)
+                    }
+                }
+            }
         }
     }
 }
